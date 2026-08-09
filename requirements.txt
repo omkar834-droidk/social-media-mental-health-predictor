@@ -1,0 +1,12 @@
+# --- Data & ML (notebook) ---
+pandas
+numpy
+scikit-learn
+seaborn
+matplotlib
+joblib
+
+# --- API serving ---
+fastapi
+uvicorn[standard]
+pydantic
