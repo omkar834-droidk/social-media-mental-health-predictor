@@ -1,7 +1,7 @@
 (() => {
   "use strict";
 
-  const API_BASE = "https://social-media-mental-health-predictor.onrender.com";
+  const API_BASE = "https://social-media-mental-health-predictor-1.onrender.com";
 
   const form = document.getElementById("predict-form");
   const submitBtn = document.getElementById("submit-btn");
@@ -281,7 +281,7 @@
     } catch (err) {
       renderError(
         "Can't reach the server",
-        `Couldn't connect to ${API_BASE}. Make sure the backend is running (uvicorn main:app --port 2200 --reload) and reachable from this page.`
+        `Couldn't connect to ${API_BASE}. The backend may be waking up from sleep (free-tier hosting) — please wait a moment and try again.`
       );
     } finally {
       setSubmitting(false);
